@@ -95,8 +95,6 @@ class UploadCourse extends React.Component {
               accept="image/png, image/jpeg"
               ref={this.fileInputRef}
               multiple={true}
-              // white font
-              style={{ color: "white" }}
             />
           </Form.Item>
           <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>

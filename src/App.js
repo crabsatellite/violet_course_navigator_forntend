@@ -77,12 +77,11 @@ class App extends React.Component {
             style={{
               fontSize: 30,
               fontWeight: 600,
-              fontFamily: "brush script mt",
               fontStyle: "italic",
               color: "white",
             }}
           >
-            CrabStay
+            Violet Course Navigator
           </div>
           {this.state.authed && (
             <div>

@@ -25,7 +25,6 @@ import {
   getReservationsByCourse,
 } from "../utils";
 import UploadCourse from "./UploadCourse";
-import Background from "./BackGround";
 import "./css/InstructorHomePage.css";
 
 const { TabPane } = Tabs;
@@ -276,7 +275,7 @@ class MyCourses extends React.Component {
               ></img>
               <div
                 style={{
-                  color: "#fff",
+                  color: "#57068c",
                   fontFamily: "Courier New",
                 }}
               >
@@ -332,10 +331,6 @@ class InstructorHomePage extends React.Component {
   render() {
     return (
       <div className="host-home-page">
-        <Background
-          videoSource={`https://personalwebpage-videos.s3.us-east-2.amazonaws.com/crab_stay_host_background.mp4`}
-          posterSource={`${process.env.PUBLIC_URL}/images/crab_stay_host_background_poster.jpg`}
-        />
         <Tabs defaultActiveKey="1" destroyInactiveTabPane={true}>
           <TabPane
             tab={

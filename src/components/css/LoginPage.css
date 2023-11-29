@@ -24,7 +24,7 @@
 
 .login_btn,
 .register_btn {
-  background-color: #5bbbe8 !important;
+  background-color: #8900e1 !important;
   border: none !important;
   color: white !important;
   border-radius: 10px !important;
@@ -36,7 +36,7 @@
 }
 
 .login_btn:hover {
-  background-color: #73c0e4 !important;
+  background-color: #57068c !important;
 }
 
 .register_btn {

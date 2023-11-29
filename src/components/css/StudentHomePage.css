@@ -1,13 +1,13 @@
 .form-item-label {
-  color: #ffffffef !important;
+  color: rgb(137, 0, 255) !important;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
   font-size: 18px !important;
   font-weight: 550 !important;
 }
 
 .submit-button {
-  background-color: #73c0e4 !important;
-  border-color: #73c0e4 !important;
+  background-color: rgb(137, 0, 255) !important;
+  border-color: rgb(137, 0, 255) !important;
   color: #fff !important;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
   font-size: 18px !important;
@@ -16,26 +16,26 @@
 }
 
 .guest-home-page .ant-tabs-tab {
-  color: white;
+  color: rgb(137, 0, 255);
   font-size: medium;
 }
 
 .guest-home-page .ant-tabs-tab-active {
-  color: #73c0e4 !important;
+  color: rgb(87, 6, 140) !important;
 }
 
 .guest-home-page .ant-tabs-ink-bar {
-  background-color: #73c0e4 !important;
+  background-color: rgb(87, 6, 140) !important;
 }
 
 .guest-home-page .ant-tabs-nav .ant-tabs-tab:hover {
-  color: #73c0e4 !important;
+  color: rgb(87, 6, 140) !important;
 }
 
 .guest-home-page .ant-tabs-nav .ant-tabs-tab-active:hover {
-  color: #73c0e4 !important;
+  color: rgb(87, 6, 140) !important;
 }
 
 .guest-home-page .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #55b6e3 !important;
+  color: rgb(87, 6, 140) !important;
 }

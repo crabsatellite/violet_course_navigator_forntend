@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(87, 6, 140);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 
 .header-title {
   /* 适应大屏幕的样式 */
-  background-color: rgb(49, 60, 69) !important;
+  background-color: rgb(87, 6, 140) !important;
 }
 
 @media (max-width: 600px) {

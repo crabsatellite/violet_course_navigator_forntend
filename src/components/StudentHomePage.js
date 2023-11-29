@@ -25,7 +25,6 @@ import {
   CalendarOutlined,
 } from "@ant-design/icons";
 import { CourseDetailInfoButton } from "./InstructorHomePage";
-import Background from "./BackGround";
 import "./css/StudentHomePage.css";
 
 const { Text } = Typography;
@@ -115,7 +114,7 @@ class MyReservations extends React.Component {
               ></img>
               <div
                 style={{
-                  color: "#fff",
+                  color: "#57068c",
                   fontFamily: "Courier New",
                 }}
               >
@@ -251,7 +250,7 @@ class SearchCourses extends React.Component {
         <Form onFinish={this.search} layout="inline">
           <Form.Item
             label={<label className="form-item-label">Key Words</label>}
-            name="key_words"
+            name="Key words"
             rules={[{ required: true }]}
           >
             <Input />
@@ -290,7 +289,7 @@ class SearchCourses extends React.Component {
                 ></img>
                 <div
                   style={{
-                    color: "#fff",
+                    color: "#57068c",
                     fontFamily: "Courier New",
                   }}
                 >
@@ -341,10 +340,6 @@ class StudentHomePage extends React.Component {
   render() {
     return (
       <div className="guest-home-page">
-        <Background
-          videoSource={`https://personalwebpage-videos.s3.us-east-2.amazonaws.com/crab_stay_guest_background.mp4`}
-          posterSource={`${process.env.PUBLIC_URL}/images/crab_stay_guest_background_poster.jpg`}
-        />
         <Tabs defaultActiveKey="1" destroyInactiveTabPane={true}>
           <TabPane
             tab={
