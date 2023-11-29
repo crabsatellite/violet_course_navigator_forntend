@@ -40,21 +40,18 @@ class ReservationList extends React.Component {
   }
 
   loadData = async () => {
-    this.setState({
-      loading: true,
-    });
+    this.setState({ loading: true });
 
     try {
       const resp = await getReservationsByCourse(this.props.courseId);
+      console.log(resp);
       this.setState({
         reservations: resp,
       });
     } catch (error) {
       message.error(error.message);
     } finally {
-      this.setState({
-        loading: false,
-      });
+      this.setState({ loading: false });
     }
   };
 
@@ -62,24 +59,26 @@ class ReservationList extends React.Component {
     const { loading, reservations } = this.state;
 
     return (
-      <List
-        loading={loading}
-        dataSource={reservations}
-        renderItem={(item) => (
-          <List.Item>
-            <List.Item.Meta
-              title={<Text>Guest Name: {item.guest.username}</Text>}
-              description={
-                <>
-                  <Text>Checkin Date: {item.checkin_date}</Text>
-                  <br />
-                  <Text>Checkout Date: {item.checkout_date}</Text>
-                </>
-              }
-            />
-          </List.Item>
-        )}
-      />
+      <div>
+        <h3>Total Registrations: {reservations.length}</h3>{" "}
+        {/* Display the total number of reservations */}
+        <List
+          loading={loading}
+          dataSource={reservations}
+          renderItem={(item) => (
+            <List.Item>
+              <List.Item.Meta
+                title={<Text>Student Name: {item.student.username}</Text>}
+                description={
+                  <>
+                    <Text>Registered Date: {item.reservation_date}</Text>
+                  </>
+                }
+              />
+            </List.Item>
+          )}
+        />
+      </div>
     );
   }
 }
