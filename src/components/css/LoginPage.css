@@ -1,0 +1,104 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.login_btn_checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.login_btn_checkbox > * {
+  margin-bottom: 2vw;
+}
+
+.login_btn,
+.register_btn {
+  background-color: #5bbbe8 !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 10px !important;
+  font-size: 4vw !important;
+  cursor: pointer !important;
+  padding: 2vw 3vw !important;
+  line-height: 0 !important;
+  opacity: 0.85 !important;
+}
+
+.login_btn:hover {
+  background-color: #73c0e4 !important;
+}
+
+.register_btn {
+  background-color: #a3b3ba !important;
+}
+
+.register_btn:hover {
+  background-color: #bdc6cc !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login_btn_checkbox > * {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.login_btn_checkbox > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.login_btn_checkbox > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.login_btn_checkbox > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.ant-form-item {
+  margin-bottom: 2vw !important;
+}
+
+@media screen and (max-width: 600px) {
+  .login_btn,
+  .register_btn {
+    font-size: 5vw !important;
+    padding: 3vw 4vw !important;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .login_btn_checkbox {
+    width: 500px;
+  }
+  .login_btn,
+  .register_btn {
+    font-size: 18px !important;
+    padding: 20px 30px !important;
+  }
+  .login_btn_checkbox > * {
+    margin-bottom: 10px;
+  }
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+}
