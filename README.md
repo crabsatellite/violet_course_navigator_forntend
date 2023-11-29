@@ -1,46 +1,27 @@
-# CrabStay: Online Accommodation Booking System (Frontend)
-
-Welcome to the frontend repository of CrabStay! This project is a comprehensive online accommodation booking system. The backend code can be found [here](https://github.com/crabsatellite/crabStay_backend).
+# Violet Course Navigator Frontend
 
 ## Overview
+Violet Course Navigator is a dynamic online platform designed for efficient course navigation and selection. This frontend application is built with React, offering a user-friendly experience.
 
-CrabStay is an online stay rental application based on React and Spring Boot. The frontend is designed and built using React and Ant Design, providing a dynamic and user-friendly interface. The application supports various functionalities such as browsing accommodations, viewing details, and making bookings with ease.
+## Features
+- Course Browsing: Easily browse through a variety of courses.
+- Secure Login: Utilize JWT authentication for secure and reliable user authentication.
 
 ## Tech Stack
+- ReactJS: For building the user interface.
+- JWT Authentication: Ensures secure user authentication.
 
-- ReactJS
-- Ant Design
+## Installation and Setup
+1. **Clone the Repository**: Use `git clone [repository-link]`.
+2. **Install Dependencies**: Run `npm install` in the project directory.
+3. **Environment Configuration**: Set up your `.env` file with the required API endpoints and JWT configurations.
+4. **Start the Application**: Execute `npm start` to run the frontend.
 
-## Frontend
-
-The frontend of CrabStay is designed to be interactive and user-friendly:
-
-- **Home**: The landing page of the application.
-
-- **Booking System**: Users can browse accommodations, view details, and make bookings with ease.
-
-- **User Portal**: A dedicated portal for users, including a main page and an order tracking history.
-
-## Getting Started
-
-### Frontend Setup (React.js)
-
-1. **Clone the Repository**: Clone this repository to your local machine using the command `git clone https://github.com/crabsatellite/crabStay_frontend.git`.
-
-2. **Setup Environment Variables**: Navigate to the directory where the project resides. Add the API endpoints and other necessary configurations to your .env file.
-
-3. **Run the Frontend Server**: Open a terminal in the project's root directory. Install the necessary dependencies by running `npm install`, then start the application using `npm start`.
-
-## Contributions
-
-This project is still under development. Contributions are very welcome!
+## Contribution
+Contributions to enhance and improve the Violet Course Navigator are welcome!
 
 ## License
-
-This project is licensed under the MIT License. See LICENSE for more information.
+This project is under the MIT License.
 
 ## Contact
-
-Feel free to get in touch if you have any questions.
-
-Enjoy booking your stays with CrabStay!
+For any queries or suggestions, feel free to reach out.
