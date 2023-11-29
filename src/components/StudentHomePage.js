@@ -220,18 +220,16 @@ class SearchCourses extends React.Component {
   };
 
   componentDidMount() {
-    // Call the search method to load all courses on component mount
-    this.search();
+    this.search({});
   }
 
-  search = async (query = "") => {
-    // Set a default empty query
+  search = async (values) => {
     this.setState({
       loading: true,
     });
 
     try {
-      const resp = await searchCourses(query);
+      const resp = await searchCourses({ key_words: values["Key words"] });
       this.setState({
         data: resp,
       });
